@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/06-messaje.js">
+    //Javascript 3.tanımlama dahili
+
+    </script>
+
+    <script type="text/Javascript"> // type özelliği yazılırdı şimdi gerek duyulmuyor
+
+        //Javascript1
+        //Javascripte amaç html etiketlerini değiştirmektir
+        document.write("Ben ikinci script kod bloğumuz");
+        /* 
+        Bu işlemi p tagından sonra yada body tagını kapatmadan önce yazılmalı
+      document.getElementById('result').innerHTML = "Javascript ne kadar canlı"*/
+    </script>
+
+</head>
+
+<body>
+    <p id="result">Lorem ipsum dolor sit amet consectetur.</p>
+    <input type="button" value="Click" onclick="Call();">
+    <p id="result2"></p>
+
+    <input type="button" value="goodbye" onclick="goodbye();">
+    <input type="button" value="welcome" onclick="welcome();">
+
+    <script>
+        //Javascript 2 yazma bodynin en sonuna yazılır.Sebebi siteyi hızlandırması
+        function Call() {
+            alert("Benin hangi fonksiyon çağırdı?");
+            document.getElementById('result').innerHTML = "Javascript ne kadar canlı";
+            document.getElementById('result').innerHTML = "Javascript kolay bir dilmiş";
+        }
+
+    </script>
+    <script src="js/06-messaje.js">
+    //Javascript 3.tanımlama dahili burayada yazılabilir </script>
+    //Javascript 3.tanımlama dahili burayada yazılabilir
+</body>
+
+</html>

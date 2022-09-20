@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <input type="button" value="Open Light" onclick="openLight();">
+    <img src="images/ışık.jfif" alt="Light" id="Picture">
+    <input type="button" value="Close Light" onclick="closeLight();">
+
+
+    <script>
+
+        function openLight() {
+            document.getElementById('Picture').src = "images/ışık.jfif";
+        }
+
+        function closeLight() {
+            document.getElementById('Picture').src = "images/diğerışık.jpg";
+        }
+
+    </script>
+</body>
+
+</html>

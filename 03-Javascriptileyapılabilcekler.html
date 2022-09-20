@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!--Javascript id ve clas ile html etiketlerine etki gösterir-->
+    <p id="result" class="test">Lorem ipsum dolor sit amet.
+    </p>
+    <!--Direk ıd üzerinden htmle erişti ve içeriği değiştirdi input type-->
+    <input type="button" value="Bas Bakalım"
+        onclick="document.getElementById('result').innerHTML='Javascript içeriğe ulaştı ve değiştirdi.Nasıl Ama'" ;>
+
+
+    <!--Direk ıd üzerinden htmle erişti ve içeriği değiştirdi ama fonksiyon yardımı ile İnput type-->
+    <input type="button" value="Bas Bakalım 2" onclick="Proccess();" ;>
+    <script>
+
+        ///Direk ıd üzerinden htmle erişti , içeriği değiştirdi ve ekrana yazdırı 
+        document.write("Sonuc=".document.getElementById('result').innerHTML);
+
+        function Proccess() {
+            document.getElementById('result').innerHTML = "Javascript içeriğe ulaştı ve değiştirdi.Nasıl ama ?2";
+        }
+
+    </script>
+</body>
+
+</html>
